@@ -1,0 +1,54 @@
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
+
+.card-deck .card {
+    max-width: 320px;
+    margin: auto;
+    border: 0;
+    background: none;
+}
+
+.btn-primary {
+    background-color: #375a7f;
+    border-color: #375a7f;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #2b4764;
+    border-color: #28415b;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #739ac2;
+    outline: 0;
+}
+.form-control:focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    -webkit-box-shadow: 0 0 0 0.15rem rgba(115,154,194,0.5);
+    box-shadow: 0 0 0 0.15rem rgba(115,154,194,0.5);
+}
+
+.form-control:invalid {
+    box-shadow: 0 0 0 0;
+}
+
+h1 { color: #ccc; margin-bottom: 5rem; }
+.emoj { font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbo; }
+h1 .fa-btc { color: #FF9900 }
+.shesek { color: #fff !important }
+.code { color: #00bc8c !important }
+.fa-chevron-right { font-size: 0.7em }
+
+
+@media (max-width: 540px) {
+    h1 { font-size: 2rem }
+}
+@media (max-width: 465px) {
+    h1 { font-size: 1.7rem }
+}
+@media (max-width: 390px) {
+    h1 { font-size: 1.5rem }
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+  <title>Sponsor Bitorzo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="Sponsor Bitorzo">
+  <meta name="twitter:card" content="summary">
+  <link rel="apple-touch-icon" href="img/icons/icon-512x512.png">
+  <link rel="apple-touch-startup-image" href="img/splash.png">
+  <link rel="manifest" href="manifest.json">
+  <link href="main/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="main/themes/default-dark.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+  <div class="container d-flex h-100">
+    <div class="justify-content-center align-self-center text-center mx-auto px-2 py-3 w-100" style="margin: auto;">
+      <h1><i class="fa fa-btc"></i> &nbsp;<i class="fa fa-chevron-right"></i> &nbsp; Sponsor Bitorzo
+      <div class="row card-deck my-3 mx-auto">
+        <div class="card">
+          <div class="w-100">
+            <form method="POST"  action="https://pay.bitorzo.io/api/v1/invoices" class="btcpay-form btcpay-form--block">
+              <input type="hidden" name="storeId" value="41NmJmHNH9btp3cWaNUyP5PynXF5hJAT9doNpdi2vKSm" />
+              <!-- <input type="hidden" name="browserRedirect" value="index.html"> -->
+              <input type="hidden" name="currency" value="BTC">
+
+              <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-btc"></i></span></div>
+                <input class="form-control" type="number" min="0.00000001" step="1E-08" name="price" placeholder="BTC amount" autofocus required>
+
+                <div class="input-group-append">
+					
+                  <!-- <button class="btn btn-primary" type="submit">Donate</button> -->
+                </div>
+              </div>
+
+              <input class="form-control mt-2" name="orderId" placeholder="Comment (optional)"><br>
+			  <input type="image" class="submit" name="submit" src="https://pay.bitorzo.io/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
+			  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<!-- Mirrored from btcpay.shesek.info , thanks Nadav!-->
+</html>
